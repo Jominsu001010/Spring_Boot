@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.dao.MemberDao;
+import com.example.demo.dao.MemberDaoImpl;
 import com.example.demo.domain.LoginDO;
 import com.example.demo.domain.Member;
 import com.example.demo.domain.resDO;
@@ -15,7 +17,8 @@ public class Lgoincontoller {
     @PostMapping("/login")
     public String login(@RequestBody LoginDO loginDO){
 
+        MemberDao memberDao = new MemberDaoImpl();
 
-        return "1";
+        return memberDao.getMember().getId();
     }
 }
