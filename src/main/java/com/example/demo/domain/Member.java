@@ -1,27 +1,58 @@
 package com.example.demo.domain;
 
 public class Member {
-    public Member(int code, String msg){
-        this.code = code;
-        this.msg = msg;
-    }
-    private int code;
-    private String msg;
+    private String id;
+    private String pwd;
+    private String name;
+    private String phone;
+    private String gender;
+    private String birday;
 
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
+    public String getId() {
+        return id;
     }
 
-    public String getMsg() {
-        return msg;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getBirday() {
+        return birday;
+    }
+
+    public void setBirday(String birday) {
+        this.birday = birday;
     }
 }
