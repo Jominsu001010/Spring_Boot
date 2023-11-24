@@ -6,7 +6,7 @@ public class Member {
     private String name;
     private String phone;
     private String gender;
-    private String birday;
+    private String birthday;
 
     public String getId() {
         return id;
@@ -48,11 +48,11 @@ public class Member {
         this.gender = gender;
     }
 
-    public String getBirday() {
-        return birday;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setBirday(String birday) {
-        this.birday = birday;
+    public void setBirthday(String birday) {
+        this.birthday = birday;
     }
 }

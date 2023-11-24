@@ -1,7 +1,8 @@
 package com.example.demo.domain;
 
 public class MemberDO {
-    private String id;
+    private int id;
+    private String email;
     private String pwd;
     private String name;
     private String gender;
@@ -9,12 +10,20 @@ public class MemberDO {
     private String phone;
     private String regdate;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPwd() {
@@ -68,7 +77,8 @@ public class MemberDO {
     @Override
     public String toString() {
         return "MemberDO{" +
-                "id='" + id + '\'' +
+                "id=" + id +
+                ", email='" + email + '\'' +
                 ", pwd='" + pwd + '\'' +
                 ", name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
