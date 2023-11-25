@@ -1,7 +1,8 @@
+/*
 package com.example.demo.service;
 
-import com.example.demo.dao.MemberDao;
-import com.example.demo.domain.Member;
+
+import com.example.demo.demo.member.Member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.List;
 public class NotifyServiceImpl implements NotifyService {
 
     @Autowired
-    private MemberDao notifyDao;
+    private Member notifyDao;
 
     @Override
     public NotifyDO getNotify(String notifyId) {
@@ -41,3 +42,4 @@ public class NotifyServiceImpl implements NotifyService {
         return notifyDao.deleteNotify(notifyId);
     }
 }
+*/

@@ -1,36 +1,35 @@
+/*
 package com.example.demo.service;
 
 import java.util.List;
 
+import com.example.demo.demo.member.Member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.example.demo.dao.MemberDao;
-import com.example.demo.domain.MemberDO;
 
 @Service
 public class MemberServiceImpl implements MemberService {
 
     @Autowired
-    private MemberDao memberDao;
+    private Member memberDao;
 
     @Override
-    public MemberDO getMember(Integer memberId) {
+    public Member getMember(Integer memberId) {
         return memberDao.getMemberDO(memberId);
     }
 
     @Override
-    public List<MemberDO> getAllMembers() {
+    public List<Member> getAllMembers() {
         return null;
     }
 
     @Override
-    public int registerMember(MemberDO member) {
+    public int registerMember(Member member) {
         return memberDao.insertMember(member);
     }
 
     @Override
-    public int updateMember(MemberDO member) {
+    public int updateMember(Member member) {
         return 0;
     }
 
@@ -41,3 +40,4 @@ public class MemberServiceImpl implements MemberService {
 
 
 }
+*/

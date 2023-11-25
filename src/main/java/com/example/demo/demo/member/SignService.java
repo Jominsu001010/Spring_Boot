@@ -34,7 +34,6 @@ public class SignService {
                 .build();
 
     }
-
     public boolean register(SignRequest request) throws Exception {
         try {
             Member member = Member.builder()

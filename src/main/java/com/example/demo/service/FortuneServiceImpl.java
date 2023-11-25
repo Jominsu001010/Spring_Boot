@@ -1,9 +1,10 @@
+/*
 package com.example.demo.service;
 
+import com.example.demo.demo.member.Member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.dao.MemberDao;
 import com.example.demo.domain.FortuneDO;
 
 import java.util.List;
@@ -11,10 +12,10 @@ import java.util.List;
 @Service
 public class FortuneServiceImpl implements FortuneService {
 
-    private MemberDao memberDao;
+    private Member memberDao;
 
     @Autowired
-    public FortuneServiceImpl(MemberDao memberDao) {
+    public FortuneServiceImpl(Member memberDao) {
         this.memberDao = memberDao;
     }
 
@@ -45,3 +46,4 @@ public class FortuneServiceImpl implements FortuneService {
     }
 
 }
+*/

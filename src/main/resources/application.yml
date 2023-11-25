@@ -11,6 +11,9 @@ spring:
     password: 1234
   thymeleaf:
     cache: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 jpa:
   database-platform: org.hibernate.dialect.OracleDialect

@@ -1,19 +1,17 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.MemberDO;
-import com.example.demo.domain.NotifyDO;
-import com.example.demo.domain.FortuneDO;
+import com.example.demo.demo.member.Member;
 
 import java.util.List;
 
 public interface MemberService {
-    MemberDO getMember(Integer memberId);
+    Member getMember(Integer memberId);
 
-    List<MemberDO> getAllMembers();
+    List<Member> getAllMembers();
 
-    int registerMember(MemberDO member);
+    int registerMember(Member member);
 
-    int updateMember(MemberDO member);
+    int updateMember(Member member);
 
     int deleteMember(Integer memberId);
 }

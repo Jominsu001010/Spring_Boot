@@ -1,27 +1,64 @@
 package com.example.demo.entity;
 
-import lombok.Data;
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "FORTUNE")
-@Data
-public class Fortune {
+public class Fortune{
     @Id
-    @Column(name = "FORTUNE_ID", length = 30)
-    private String fortune_id;
-    @Column(name = "FORTUNE_VARIETY", length = 50)
-    private String fortune_variety;
-    @Column(name = "FORTUNE_CONTENT", length = 1000)
-    private String fortune_content;
-    @Column(name = "FORTUNE_DATE", length = 6)
-    private String fortune_date;
-    @Column(name = "FORTUNE_STATE", length = 50)
-    private String fortune_state;
-    @Column(name = "MEMBER_ID", length = 5)
-    private Integer member_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String type;
+    private String name;
+    private String title;
+    private String detail;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public Fortune(String type, String name, String title, String detail) {
+        this.type = type;
+        this.name = name;
+        this.title = title;
+        this.detail = detail;
+    }
 }

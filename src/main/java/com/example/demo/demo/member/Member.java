@@ -40,11 +40,5 @@ public class Member {
         this.roles = role;
         role.forEach(o -> o.setMember(this));
     }
-    public void updateMember(SignRequest dto, PasswordEncoder passwordEncoder) {
-        if(dto.getPwd() != null) this.pwd = passwordEncoder.encode(dto.getPwd());
-        if(dto.getName() != null) this.name = dto.getName();
-        if (dto.getPhone() != null) this.phone = dto.getPhone();
-        if(dto.getGender() != null) this.gender = dto.getGender();
-        if(dto.getBirthday() != null) this.birthday = dto.getBirthday();
-    }
+
 }
